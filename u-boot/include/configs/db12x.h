@@ -306,7 +306,8 @@
  * PLL/Clocks configuration
  * ========================
  */
-#define CONFIG_QCA_PLL	QCA_PLL_PRESET_550_400_200
+//#define CONFIG_QCA_PLL	QCA_PLL_PRESET_550_400_200
+#define CONFIG_QCA_PLL        QCA_PLL_PRESET_650_400_200
 
 #if defined(CONFIG_FOR_ALFA_NETWORK_N5Q)
 
