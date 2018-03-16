@@ -1257,6 +1257,18 @@
 	#define QCA_PLL_CPU_PLL_DITHER_REG_VAL_XTAL40		_qca95xx_cpu_pll_dither_reg_val(16)
 	#define QCA_PLL_DDR_PLL_DITHER_REG_VAL_XTAL40		_qca95xx_ddr_pll_dither_reg_val(256)
 
+#elif (CONFIG_QCA_PLL == QCA_PLL_PRESET_700_450_225)	/* Tested! */
+
+	#define QCA_PLL_CPU_PLL_CFG_REG_VAL_XTAL25		_qca95xx_cpu_pll_cfg_reg_val(28, 1, 0, 0, 0)
+	#define QCA_PLL_DDR_PLL_CFG_REG_VAL_XTAL25		_qca95xx_ddr_pll_cfg_reg_val(18, 1, 1, 0, 0)
+	#define QCA_PLL_CPU_DDR_CLK_CTRL_REG_VAL_XTAL25		_qca95xx_cpu_ddr_clk_ctrl_reg_val(1, 1, 2, 1, 1, 1)
+
+	#define QCA_PLL_CPU_PLL_CFG_REG_VAL_XTAL40		_qca95xx_cpu_pll_cfg_reg_val(17, 1, 0, 0, 0)
+	#define QCA_PLL_DDR_PLL_CFG_REG_VAL_XTAL40		_qca95xx_ddr_pll_cfg_reg_val(11, 1, 1, 0, 0)
+	#define QCA_PLL_CPU_DDR_CLK_CTRL_REG_VAL_XTAL40		_qca95xx_cpu_ddr_clk_ctrl_reg_val(1, 1, 2, 1, 1, 1)
+	#define QCA_PLL_CPU_PLL_DITHER_REG_VAL_XTAL40		_qca95xx_cpu_pll_dither_reg_val(32)
+	#define QCA_PLL_DDR_PLL_DITHER_REG_VAL_XTAL40		_qca95xx_ddr_pll_dither_reg_val(256)
+
 #else
 	#error "QCA PLL configuration not supported or not selected!"
 #endif
