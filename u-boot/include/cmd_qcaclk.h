@@ -2267,6 +2267,40 @@ static const clk_profile clk_profiles[] = {
 			_qca95xx_cpu_pll_dither_reg_val(16),
 			_qca95xx_ddr_pll_dither_reg_val(256)
 		},
+	}, {
+		/* Untested! */
+		700, 450, 225, 28,
+		_qca95xx_spi_ctrl_addr_reg_val(8, 1, 0, 2),
+		{
+			_qca95xx_cpu_pll_cfg_reg_val(28, 1, 0, 0, 0),
+			_qca95xx_ddr_pll_cfg_reg_val(18, 1, 1, 0, 0),
+			_qca95xx_cpu_ddr_clk_ctrl_reg_val(1, 1, 2, 1, 1, 1),
+			_qca95xx_cpu_pll_dither_reg_val(0),
+			_qca95xx_ddr_pll_dither_reg_val(0)
+		}, {
+			_qca95xx_cpu_pll_cfg_reg_val(17, 1, 0, 0, 0),
+			_qca95xx_ddr_pll_cfg_reg_val(11, 1, 1, 0, 0),
+			_qca95xx_cpu_ddr_clk_ctrl_reg_val(1, 1, 2, 1, 1, 1),
+			_qca95xx_cpu_pll_dither_reg_val(32),
+			_qca95xx_ddr_pll_dither_reg_val(256)
+		},
+	}, {
+		/* Untested! */
+		750, 450, 225, 28,
+		_qca95xx_spi_ctrl_addr_reg_val(8, 1, 0, 2),
+		{
+			_qca95xx_cpu_pll_cfg_reg_val(30, 1, 0, 0, 0),
+			_qca95xx_ddr_pll_cfg_reg_val(18, 1, 1, 0, 0),
+			_qca95xx_cpu_ddr_clk_ctrl_reg_val(1, 1, 2, 1, 1, 1),
+			_qca95xx_cpu_pll_dither_reg_val(0),
+			_qca95xx_ddr_pll_dither_reg_val(0)
+		}, {
+			_qca95xx_cpu_pll_cfg_reg_val(18, 1, 0, 0, 0),
+			_qca95xx_ddr_pll_cfg_reg_val(11, 1, 1, 0, 0),
+			_qca95xx_cpu_ddr_clk_ctrl_reg_val(1, 1, 2, 1, 1, 1),
+			_qca95xx_cpu_pll_dither_reg_val(48),
+			_qca95xx_ddr_pll_dither_reg_val(256)
+		},
 	},
 	#endif /* SOC_TYPE & QCA_AR933X_SOC */
 };
